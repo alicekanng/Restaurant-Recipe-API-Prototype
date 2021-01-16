@@ -7,7 +7,9 @@ const RecipeDetails = ({ingredients}) => {
 			return(
 				<ul key={uuidv4()} className="ingredient-list">
 					<li className="ingredient-text">{ingredient.text}</li>
-					<li className="ingredient-weight">weight - {ingredient.weight}</li>
+					<ul>
+						<li className="ingredient-weight">weight - {ingredient.weight}g</li>
+					</ul>
 				</ul>
 			)
 		})
