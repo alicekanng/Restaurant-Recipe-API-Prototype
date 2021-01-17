@@ -1,7 +1,7 @@
 import React from 'react'
 import Thumbnail from './Thumbnail'
 
-const Restaurant = ({key, name, thumb, locality, address, cuisines, cost , rating, votes, rating_color }) => {
+const Restaurant = ({resId, name, thumb, locality, address, cuisines, cost , rating, votes, rating_color }) => {
 	return (
 		<div className="restaurant-tile">
 			<h2 className="rest-name">{name}</h2>
@@ -17,6 +17,7 @@ const Restaurant = ({key, name, thumb, locality, address, cuisines, cost , ratin
 					<p style={{backgroundColor: `${rating_color}`}}>{rating}/5</p>
 				</div>
 			</div>
+			
 		</div>
 	)
 }

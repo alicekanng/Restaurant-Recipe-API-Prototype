@@ -58,9 +58,11 @@ const App = () => {
   let restaurantToRender
   if (restaurant) {
     restaurantToRender = restaurant.map(rest => {
+      {console.log("Reached")}
+			{console.log(rest.restaurant.cuisines)}
       return (
       <Restaurant
-        key = {rest.restaurant.id}
+        resId = {rest.restaurant.id}
         name = {rest.restaurant.name}
         thumb = {rest.restaurant.thumb}
         locality = {rest.restaurant.location.locality}
